@@ -1,0 +1,84 @@
+<div class="col-md-12 card text-white bg-danger mb-3 w-100">
+    <div class="card-header"><strong>REGISTER</strong></div>
+    <div class="card-body">
+        <form [formGroup]="registerFormGroup" (ngSubmit)="onSubmit()">
+            <div class="form-row align-items-center">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend label-input">
+                        <span class="input-group-text w-100 label-span" id="lastname">LASTNAME : </span>
+                    </div>
+                    <input type="text" class="form-control input-form" placeholder="enter your lastname here"
+                           aria-label="lastname" aria-describedby="basic-addon1" formControlName="lastname">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend label-input">
+                        <span class="input-group-text w-100 label-span" id="firstname">FIRSTNAME : </span>
+                    </div>
+                    <input type="text" class="form-control input-form" placeholder="enter your firstname here"
+                           aria-label="firstname" aria-describedby="basic-addon1" formControlName="firstname">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend label-input">
+                        <span class="input-group-text w-100 label-span" id="telephone">TELEPHONE : </span>
+                    </div>
+                    <input type="text" class="form-control input-form" placeholder="enter your phone here"
+                           aria-label="telephone" aria-describedby="basic-addon1" formControlName="telephone">
+                    <div class="text-center" *ngIf="!registerFormGroup.controls.telephone.valid">
+                        <p>PHONE NOT VALID</p>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend label-input">
+                        <span class="input-group-text w-100 label-span" id="email">@-MAIL : </span>
+                    </div>
+                    <input type="email" class="form-control input-form" placeholder="enter your email here"
+                           aria-label="email" aria-describedby="basic-addon1" formControlName="email">
+                    <div class="text-center" *ngIf="!registerFormGroup.controls.email.valid">
+                        <p>EMAIL NOT VALID</p>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend label-input">
+                        <span class="input-group-text w-100 label-span" id="password">PASSWORD : </span>
+                    </div>
+                    <input type="password" class="form-control input-form"
+                           placeholder="enter your password here" aria-label="password"
+                           aria-describedby="basic-addon1" formControlName="password">
+                    <div *ngIf="!registerFormGroup.controls.password.valid">
+                        <p>PASSWORD MUST CONTAINTED AT LEASTE 8 AT MAX 32 CHARACTERS</p>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="col-sm-6 my-2">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">X : </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputX" placeholder="coordinate X" formControlName="coordinateX">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 my-2">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Y : </div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputY" placeholder="coordinate Y" formControlName="coordinateY">
+                        </div>
+                    </div>
+                </div>
+                <div  class="input-group mb-3">
+                    <button [disabled]="!registerFormGroup.valid"  type="submit"
+                            class="btn btn-primary mb-2 w-100 h-100">SIGN UP
+                    </button>
+                </div>
+
+            </div>
+        </form>
+        <hr class="mt-1 mb-2">
+        <div class="input-group mb-3 w-100 mx-auto">
+            <button (click)="parrent.wantToResigterHandler()" class="w-100 h-100 btn btn-success mx-auto">RETURN TO
+                LOGIN
+            </button>
+        </div>
+    </div>
+</div>

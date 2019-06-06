@@ -1,0 +1,29 @@
+<div id="card-view" class="col-lg-3">
+    <div class="card">
+        <div class="card-img-top text-center mx-auto my-auto">
+            <img width="100%" src="{{shop.uri}}" class="mx-auto img-top img-thumbnail rounded d-block"
+                 alt="IMG NOT FOUND">
+        </div>
+        <div class="card-header">
+            <h5 class="card-title mx-auto my-auto">
+                <fa class="icon-title-name" name="first-order"></fa> &nbsp;
+                {{shop.name}} </h5>
+        </div>
+        <div class="card-body">
+            <p class="left-adress-zone">
+                <fa name="map"></fa>
+            </p>
+            <p class="right-adress-zone card-text float-right"> {{shop.adresse}}</p>
+        </div>
+        <div *ngIf="!isInLikedPage" class="card-footer text-center">
+            <button href="#" class="btn btn-info" (click)="onLike()">
+                <fa name="thumbs-up"></fa>
+                LIKE
+            </button>
+            <button href="#" class="btn btn-danger btn-card-margin" (click)="onDislike()">
+                <fa name="thumbs-down"></fa>
+                DISLIKE
+            </button>
+        </div>
+    </div>
+</div>

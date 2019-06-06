@@ -1,0 +1,37 @@
+<div class="login-page w-100 h-100">
+
+    <!--  START LOGIN HEADER (FLEX LEFT) -->
+    <header class="login-header h-100">
+        <img src="../../../assets/images/loader.gif" alt="logo"/>
+        <br/>
+        <img src="../../../assets/images/el-ouadghiri-banner.png" class="banner" alt="logo"/>
+        <img src="../../../assets/images/Shop.gif" class="small-logo" alt="logo"/>
+    </header>
+    <!--  END LOGIN HEADER (FLEX LEFT) -->
+
+    <!--  START LOGIN CONTAINER (FLEX RIGHT) -->
+    <div class="login-section container text-center h-100">
+        <div class="row login-box mx-auto my-auto w-75">
+            <div class="row w-100 h-100 w-75 mx-auto my-auto">
+                <app-login *ngIf="!wantToRegister"></app-login>
+                <div *ngIf="!wantToRegister" class="col-md-12"><br/></div>
+                <div *ngIf="!wantToRegister" class="col-md-12 card text-white bg-danger mb-3 w-100">
+                    <div class="card-header"><strong>REGISTER TO SHOPS RECOMENDATIONS</strong></div>
+                    <div class="card-body">
+                        <div class="form-row align-items-center">
+                            <div class="col-md-12 w-100">
+                                <div class="col-auto w-100 h-100">
+                                    <div class="input-group mb-2 w-100 h-100 mx-auto">
+                                        <button (click)="wantToResigterHandler()" class="w-100 h-100 btn btn-primary mx-auto">REGISTER</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <app-register [parrent]="this" *ngIf="wantToRegister"></app-register>
+            </div>
+        </div>
+    </div>
+    <!--  START LOGIN CONTAINER (FLEX RIGHT) -->
+</div>

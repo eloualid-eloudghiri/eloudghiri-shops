@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url("/assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url("/assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url("/assets/fonts/Ubuntu-Light.ttf") format("truetype");
+}
+

@@ -1,0 +1,90 @@
+{
+  "shops": [
+    {
+      "id": 1,
+      "name": "MCDONALD AGDAL",
+      "address": "Avenue FAL OUALD OUMIR, Agdal 10000, Rabat",
+      "uri": "https://p4.storage.canalblog.com/49/70/260332/19865646.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Café Ça100Bon",
+      "address": "24 Avenue Moulay Ismail, Rabat 10020",
+      "uri": "https://lh5.googleusercontent.com/p/AF1QipM6xPoT6fJWKqdFmrNRx8x2UwQUtIddHA8m4o-b=s611-k-no"
+    },
+    {
+      "id": 3,
+      "name": "VENIZIA ICE RIAD",
+      "address": "Mahaj Ryad, Hay Riad, Rabat",
+      "uri": "https://image.jimcdn.com/app/cms/image/transf/none/path/sf0717ce5620da2df/image/i46a8ed71f4d43b82/version/1516565214/image.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": null,
+      "lastName": "YOUSSEF",
+      "firstName": "MAHTAT",
+      "email": "youssef.mahtat@gmail.com",
+      "telephone": "062255655",
+      "password": "123456",
+      "coordinate": {
+        "x": "15",
+        "y": "54"
+      }
+    },
+    {
+      "lastName": "YOUSSEF",
+      "firstName": "MAHTAT",
+      "email": "youssef.mahtat@gmail.com",
+      "telephone": "0622556515",
+      "password": "123456",
+      "coordinate": {
+        "x": "15",
+        "y": "54"
+      },
+      "id": 2
+    }
+  ],
+  "shop": [],
+  "login": [
+    {
+      "lastName": "YOUSSEF",
+      "firstName": "MAHTAT",
+      "email": "youssef.mahtat@gmail.com",
+      "telephone": "062255655",
+      "password": "123456",
+      "token": "s5df4sd1f2sd1f3sd2f13",
+      "coordinate": {
+        "x": "15",
+        "y": "54"
+      },
+      "id": 1
+    },
+    {
+      "lastName": "YOUSSEF",
+      "firstName": "MAHTAT",
+      "email": "youssef.mahtat@gmail.com",
+      "telephone": "062255655",
+      "password": "123456",
+      "token": "s5df4sd1f2sd1f3sd2f13",
+      "coordinate": {
+        "x": "15",
+        "y": "54"
+      },
+      "id": 2
+    },
+    {
+      "lastName": "YOUSSEF",
+      "firstName": "MAHTAT",
+      "email": "youssef.mahtat@gmail.com",
+      "telephone": "062255655",
+      "password": "123456",
+      "token": "s5df4sd1f2sd1f3sd2f13",
+      "coordinate": {
+        "x": "15",
+        "y": "54"
+      },
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+<div>
+  <div id="shops-container" class="row justify-content-center w-100">
+    <app-shop-card [isInLikedPage]="true" *ngFor="let shop of shops | keyvalue" [shop]="shop.value"></app-shop-card>
+  </div>
+</div>
+

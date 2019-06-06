@@ -1,0 +1,32 @@
+<div class="col-md-12 card text-white bg-danger mb-3 w-100">
+  <div class="card-header"><strong>LOGIN</strong></div>
+  <div class="card-body">
+    <form [formGroup]="loginFormGroup" (ngSubmit)="onSubmit()">
+      <div class="col-md-12 text-center">
+      </div>
+      <div class="form-row align-items-center">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend label-input">
+            <span class="input-group-text w-100 label-span" id="email">@-MAIL : </span>
+          </div>
+          <input type="email" class="form-control input-form" placeholder="enter your email here"
+                 aria-label="email" aria-describedby="basic-addon1" formControlName="email">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend label-input">
+            <span class="input-group-text w-100 label-span" id="password">PASSWORD : </span>
+          </div>
+          <input type="password" class="form-control input-form"
+                 placeholder="enter your password here" aria-label="password"
+                 aria-describedby="basic-addon1" formControlName="password">
+        </div>
+        <div class="input-group mb-3">
+          <button type="submit"
+                  class="btn btn-success mb-2 w-100 h-100">SIGN IN
+          </button>
+        </div>
+
+      </div>
+    </form>
+  </div>
+</div>
