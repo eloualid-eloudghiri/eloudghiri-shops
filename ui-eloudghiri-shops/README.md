@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Project Structure
 ```
-ui-mypath-reco/ 
+ui-eloudghiri-shops/ 
    ├──src/                                  # source files that will be compiled to javascript
    │   │
    │   ├──tslint.json                       # configuration file of TSLint
@@ -62,11 +62,11 @@ ui-mypath-reco/
    │   │   │
    │   │   ├──app.routing.ts                # application routes
    │   │   │
+   │   │   ├──layout                        # componants of layout
+   │   │   │
    │   │   ├──pages/                        # application pages components
    │   │   │        
    │   │   ├──shared/                       # shared modules folder
-   │   │   │   │
-   │   │   │   ├──layout                    # componants of layout
    │   │   │   │
    │   │   │   ├──models                    # Data models shared to all componants and services
    │   │   │   │
@@ -118,7 +118,7 @@ install of JQuery javascript library `npm install jquery@3.4.1 --save`
 Add the jquery file inside the angular.json file.
 
 
-## Owl Carousel  :
+## Angular-Font-Awesome  :
    
 install of font-awsome for icons `npm install --save font-awesome angular-font-awesome`
 Add the font.awsome files (css & js files) inside the angular.json file.
