@@ -2,6 +2,8 @@ package com.eloudghiri.shops;
 
 
 import com.eloudghiri.shops.configurations.CORSFilter;
+import com.eloudghiri.shops.dtos.mapper.ShopMapper;
+import com.eloudghiri.shops.dtos.mapper.UserMapper;
 import com.eloudghiri.shops.entities.Coordinate;
 import com.eloudghiri.shops.entities.Shop;
 import com.eloudghiri.shops.repositories.CoordinateRepository;
@@ -11,6 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 //@ComponentScan(basePackageClasses = {ShopMapper.class, UserMapper.class})
